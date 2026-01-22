@@ -6,22 +6,44 @@
 
 int main(int argc, char* argv[])
 {
-    QApplication app(argc, argv); // 1. 初始化 Qt 应用
+    QApplication app(argc, argv);
 
-    QWidget window;
-    window.setWindowTitle("TX-Messenger Client");
-    window.resize(400, 300);
+    // 1. 主窗口
+    QWidget* window = new QWidget();
+    window->setWindowTitle("TongXinChat");
+    window->setFixedSize(400, 500);
+    window->setStyleSheet("background-color: #EBF7FF;border-radius: 15px;");
 
-    QVBoxLayout* layout = new QVBoxLayout(&window);
 
-    QPushButton* btn = new QPushButton("点击测试 Qt 环境", &window);
-    layout->addWidget(btn);
+    // 2. 登录按钮 (蓝色那个)
+    QPushButton* bt1 = new QPushButton("登录");
+    bt1->setFixedHeight(45); 
+    bt1->setStyleSheet("QPushButton { background-color: #0099FF; color: white; border-radius: 5px; font-weight: bold; font-size: 16px; }");
 
-    QObject::connect(btn, &QPushButton::clicked, [&]() {
-        QMessageBox::information(&window, "成功", "VS2022 + CMake + Qt6 环境配置满分通过！");
-        });
+    // 3. 注册按钮 
+    QPushButton* bt2 = new QPushButton("注册账号");
+    bt2->setFixedHeight(30); 
+    bt2->setFlat(true);
+    bt2->setStyleSheet("color: #0099FF; font-size: 14px;");
 
-    window.show(); // 2. 显示窗口
+    // 4. 布局设计
+    QVBoxLayout* v1 = new QVBoxLayout();
 
-    return app.exec(); // 3. 进入事件循环
+
+    v1->addStretch();
+
+    v1->addWidget(bt1);
+
+    v1->addSpacing(10);
+
+    v1->addWidget(bt2);
+
+
+    v1->setContentsMargins(40, 0, 40, 30);
+ 
+
+    window->setLayout(v1);
+    window->show();
+
+    return app.exec();
 }
