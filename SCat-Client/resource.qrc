@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resource/icon/add.png</file>
+        <file>Resource/icon/close.png</file>
+        <file>Resource/icon/folder.png</file>
+        <file>Resource/icon/head.png</file>
+        <file>Resource/icon/min.png</file>
+        <file>Resource/icon/max.png</file>
+        <file>Resource/icon/mood.png</file>
+        <file>Resource/icon/notifications.png</file>
+        <file>Resource/icon/search.png</file>
+        <file>Resource/icon/settings.png</file>
+        <file>Resource/icon/background.png</file>
+    </qresource>
+</RCC>
