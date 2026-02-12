@@ -179,7 +179,7 @@ void NoFrame::onbtncloseClick()
 	this->close();
 }
 
-void NoFrame::onbtnminClick()
+void NoFrame::onbtnminClick() 
 {
 	this->showMinimized();
 }

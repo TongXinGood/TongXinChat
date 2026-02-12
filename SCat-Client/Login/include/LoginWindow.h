@@ -5,7 +5,7 @@
 #include <QLineEdit> 
 #include <QPushButton>
 #include <QWidget>
-#include < QCheckBox>
+#include <QCheckBox>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QLabel>
@@ -22,11 +22,15 @@ signals:
 	void sendForgotpwdClicked();
 private slots:
 	void onLoginClicked();
+	void onRegisterClicked();
+	void onForgotpwdClicked();
 private:
 	void initUI();
 	void initConnect();
 private:
 	QLabel* lbLogo;
+	QLabel* LogoText;
+
 	QLabel* lbTextcn;
 	QLabel* lbTexteg;
 
