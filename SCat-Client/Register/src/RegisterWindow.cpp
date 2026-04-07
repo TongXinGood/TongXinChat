@@ -109,8 +109,6 @@ void RegisterWindow::initUi()
         /* 2. Join Scat ! - 图片中是斜体、稍大 */
         #JoinText { 
             font-size: 16px; 
-            font-weight: bold; 
-            font-style: italic; /* 关键：斜体 */
             color: #333; 
             margin-bottom: 2px;
         }
@@ -125,16 +123,16 @@ void RegisterWindow::initUi()
 
         /* 4. 输入框 - 胶囊形状，极淡的边框 */
         #InputEdit {
-            border: 1px solid #E5E5E5; /* 很浅的灰边框 */
-            border-radius: 20px;       /* 大圆角 */
-            padding: 0px 15px;         /* 左右留白 */
-            background-color: #FFFFFF; /* 纯白背景 */
+            border: 1px solid #E0E0E0; /* 很浅的灰边框 */
+            border-radius: 1px;       /* 大圆角 */
+            padding: 10px 15px;         /* 左右留白 */
+            background-color: #FAFAFA; /* 纯白背景 */
             font-size: 14px;
             color: #333333;
-            min-height: 40px;          /* 强制高度以匹配图片饱满感 */
         }
         #InputEdit:focus {
-            border: 1px solid #BBBBBB; /* 聚焦时边框稍深 */
+            border: 1px solid #000000; /* 聚焦时边框稍深 */
+            background-color:#FFFFFF;
         }
 
       
@@ -142,9 +140,10 @@ void RegisterWindow::initUi()
             background-color: #F2F2F2; 
             color: #333333;            
             border: none;
-            border-radius: 20px;       
+            border-radius: 1px;       
             font-size: 16px;
-            min-height: 40px;         
+            font-weight: bold;
+            min-height: 40px;   
         }
         #BtnRegister:hover {
             background-color: #E0E0E0; /* 悬停变色 */

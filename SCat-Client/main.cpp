@@ -6,9 +6,16 @@
 #include "Register/include/RegisterWindow.h"
 #include "Login/include/Login.h"
 #include"Chat/include/ChatWindow.h"
+#include "Friend/include/FriendList.h"
+#include "Scat/include/ScatWindow.h"
 
 
 int main(int argc, char* argv[])
 {
+    QApplication app(argc, argv);
 
+    RegisterWindow reg;
+    reg.show();
+
+    return app.exec();
 }

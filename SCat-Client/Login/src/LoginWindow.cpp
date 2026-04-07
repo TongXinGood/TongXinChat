@@ -121,7 +121,7 @@ void LoginWindow::initUI()
             color: #FFFFFF;
             border-radius: 20px;
             padding: 12px;
-            font-size: 12px;
+            font-size: 11px;
             font-weight: bold;
         }
         #BtnLogin:hover { background-color: #333333; }
